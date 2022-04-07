@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.fontFamily": "Fira Code Retina",
+		"html.format.wrapAttributes": "aligned-multiple",
+		"editor.fontSize": 12,
+		"editor.acceptSuggestionOnEnter": "smart",
+		"vscode-edge-devtools.webhint": false,
+		"files.autoSave": "afterDelay",
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"type": "pwa-msedge",
+				"request": "launch",
+				"name": "Launch Edge against localhost",
+				"url": "http://localhost:3000",
+				"webRoot": "${workspaceFolder:dusk-ui}/src",
+				"sourceMapPathOverrides": {
+					"webpack:///src/*": "${webRoot}/*"
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,160 @@
+.Panel-container {
+    background: black;
+}
+
+.Panel-container--lgray {
+    background: #222222;
+}
+
+.Panel-container--dgray {
+    background: #141414;
+}
+
+.Panel-content {
+    display: grid;
+    align-items: center;
+    padding-top: calc(3.5rem + 4px);
+    min-height: calc(75vh - (3.5rem + 4px));
+    box-sizing: content-box;
+    margin: 0 12vw;
+}
+
+@media(max-width: 768px) {
+    .Panel-content {
+        margin: 0 15px;
+        padding-top: 64px;
+    }
+}
+
+.Panel-content--fullHeight {
+    min-height: calc(100vh - (3.5rem + 4px));
+}
+
+.Panel-footer {
+    height: 25vh;
+    display: grid;
+    place-items: center;
+}
+
+.Panel__arrow {
+    height: 50%;
+    display: inline-flex;
+    cursor: pointer;
+    animation: intro 1s 0s ease-in-out backwards,
+        pulse-down 2.5s 0s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
+}
+
+@keyframes pulse-down {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.Panel__loader {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 2vw;
+}
+
+.Panel__loader>* {
+    height: 5vh;
+    width: 5vh;
+    background-color: white;
+    border-radius: 3px;
+    /* box-shadow: 0 0 10px white; */
+    /* opacity: 0; */
+}
+
+.Panel__loader>:nth-child(1) {
+    --nth-child: 1;
+    animation: blup1 500ms linear both infinite;
+}
+
+.Panel__loader>:nth-child(2) {
+    --nth-child: 2;
+    animation: blup2 500ms linear both infinite;
+}
+
+.Panel__loader>:nth-child(3) {
+    --nth-child: 3;
+    animation: blup3 500ms linear both infinite;
+}
+
+/* 
+N  Delay  Duration
+1   0         3
+2   0         3
+3   0         3
+
+0 -- 1 -- 2 -- 3 -- 4 -- 5
+*/
+
+@keyframes blup1 {
+    0% {
+        opacity: 0
+    }
+
+    20% {
+        opacity: 100;
+    }
+
+    80% {
+        opacity: 100;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes blup2 {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 100;
+    }
+
+    80% {
+        opacity: 100;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes blup3 {
+    0% {
+        opacity: 0
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 100;
+    }
+
+    80% {
+        opacity: 100;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

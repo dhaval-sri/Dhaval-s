@@ -1,0 +1,22 @@
+.card-title {
+    font-size: calc(1.3em + (24 - 14) * ((100vw - 300px) / (4000 - 300)));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 0;
+    padding-left: 0;
+}
+
+@media(min-width: 768px) {
+    .card-title {
+        font-size: calc(1em + (24 - 14) * ((100vw - 300px) / (4000 - 300)));
+    }
+}
+
+.card-body {
+    font-size: calc(1em + (28 - 14) * ((100vw - 300px) / (4000 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(4000 - 300)));
+}
+
+.card-text {
+    font-size: 0.9em;
+    min-height: 4em;
+}

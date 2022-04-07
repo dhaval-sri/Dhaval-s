@@ -1,0 +1,9 @@
+export enum ESectionType {
+    TIMELINE,
+    CARDS,
+    LINKS,
+    NO_TITLE_WITH_ONE_COL,
+    NO_TITLE_WITH_TWO_COL,
+    TITLE_WITH_ONE_COL,
+    TITLE_WITH_TWO_COL,
+}

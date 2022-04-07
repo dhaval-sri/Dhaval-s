@@ -1,0 +1,68 @@
+.MediaBtn {
+    display: inline-block;
+    position: relative;
+}
+
+.MediaBtn__Icon {
+    width: 100%;
+    height: 100%;
+    transition: 0.25s;
+}
+
+.MediaBtn__Brand {
+    color: black;
+}
+
+.MediaBtn:hover .MediaBtn__Brand {
+    color: white;
+}
+
+.MediaBtn__Bg {
+    color: white;
+    opacity: 1;
+}
+
+.MediaBtn:hover .MediaBtn__Icon--tw {
+    color: #9147ff;
+}
+
+.MediaBtn:hover .MediaBtn__Icon--yt {
+    color: #FF0000;
+}
+
+.MediaBtn:hover .MediaBtn__Icon--dd {
+    color: #5865f2;
+}
+
+.MediaBtn:hover .MediaBtn__Icon--tweet {
+    color: #1d9bf0;
+}
+
+.MediaBtn:hover .MediaBtn__Icon--lnk {
+    color: black;
+}
+
+#MediaBtn-InstaPath {
+    opacity: 0;
+    fill: url("#MediaBtn-InstaRg")
+}
+
+.MediaBtn:hover #MediaBtn-InstaPath {
+    opacity: 1;
+}
+
+#MediaBtn-InstaWhite {
+    opacity: 1;
+}
+
+.MediaBtn:hover #MediaBtn-InstaWhite {
+    opacity: 0;
+}
+
+.MediaBtn__Icon--instaGr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,724&display=swap');
+
+/* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+
+html, body {
+    min-height: 100%;
+    scrollbar-width: none;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* RFS */
+
+@media (max-width: 1200px) {
+    legend {
+        font-size: calc(1.275rem + 0.3vw);
+    }
+
+    h1, .h1 {
+        font-size: calc(1.375rem + 1.5vw);
+    }
+
+    h2, .h2 {
+        font-size: calc(1.325rem + 0.9vw);
+    }
+
+    h3, .h3 {
+        font-size: calc(1.3rem + 0.6vw);
+    }
+
+    h4, .h4 {
+        font-size: calc(1.275rem + 0.3vw);
+    }
+
+    .display-1 {
+        font-size: calc(1.725rem + 5.7vw);
+    }
+
+    .display-2 {
+        font-size: calc(1.675rem + 5.1vw);
+    }
+
+    .display-3 {
+        font-size: calc(1.575rem + 3.9vw);
+    }
+
+    .display-4 {
+        font-size: calc(1.475rem + 2.7vw);
+    }
+
+    .close {
+        font-size: calc(1.275rem + 0.3vw);
+    }
+}
+
+p {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: calc(1em + (28 - 14) * ((100vw - 300px) / (4000 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(4000 - 300)));
+    opacity: 0.87;
+}
+
+.btn {
+    font-size: calc(1em + (28 - 14) * ((100vw - 300px) / (4000 - 300)));
+    line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(4000 - 300)));
+}
+
+.DuskBtn--outline {
+    font-weight: 500;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 0;
+    color: white;
+    transition: 0.25s;
+}
+
+.DuskBtn--outline:hover {
+    background: white;
+    color: black;
+}
+
+.popover {
+    max-width: 100%;
+}
+
+@keyframes intro {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

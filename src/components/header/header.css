@@ -1,0 +1,59 @@
+.Navbar {
+    color: white;
+    background: #000;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-family: 'Merriweather Sans', sans-serif;
+    padding-top: 0.275em;
+}
+
+.navbar-nav .DuskBtn--outline:hover.nav-link {
+    background: white;
+    color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.Header-Popover__body {
+    background: #212529;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    border-radius: 4px;
+}
+
+.nav-item {
+    cursor: pointer;
+    font-weight: 300;
+    font-size: calc(1em + (24 - 14) * ((100vw - 300px) / (4000 - 300)));
+}
+
+.nav-item--animated {
+    animation: intro 750ms linear;
+}
+
+.popover {
+    border: none;
+}
+
+.bs-popover-auto[data-popper-placement^=bottom]>.popover-arrow::after {
+    border-bottom-color: #212529;
+}
+
+@media(max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
+
+.btn-view {
+    
+}
+
+.btn-download {
+
+}

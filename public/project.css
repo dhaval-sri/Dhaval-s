@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:400&display=swap');
+/* temp */
+
+.projImg {
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+.logo {
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+}
+
+/* RFS */
+
+@media (max-width: 1200px) {
+    legend {
+        font-size: calc(1.275rem + 0.3vw);
+    }
+    h1, .h1 {
+        font-size: calc(1.375rem + 1.5vw);
+    }
+    h2, .h2 {
+        font-size: calc(1.325rem + 0.9vw);
+    }
+    h3, .h3 {
+        font-size: calc(1.3rem + 0.6vw);
+    }
+    h4, .h4 {
+        font-size: calc(1.275rem + 0.3vw);
+    }
+    .display-1 {
+        font-size: calc(1.725rem + 5.7vw);
+    }
+    .display-2 {
+        font-size: calc(1.675rem + 5.1vw);
+    }
+    .display-3 {
+        font-size: calc(1.575rem + 3.9vw);
+    }
+    .display-4 {
+        font-size: calc(1.475rem + 2.7vw);
+    }
+    .close {
+        font-size: calc(1.275rem + 0.3vw);
+    }
+}
+
+/* pdfDiyo */
+
+@font-face {
+    font-family: Airstream;
+    src: url(Airstream.otf);
+    font-display: swap;
+}
+
+.projCover-pdfDiyo {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/dhaval-s.appspot.com/o/pdfDiyo-banner-notext.png?alt=media&token=2af73406-d132-49a0-ab42-3da580accf3a');
+    background-color: rgb(0, 0, 0, 0.4);
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    position: relative;
+}
+
+.projName-pdfDiyo {
+    font-family: Airstream;
+    font-size: 4rem;
+    text-shadow: 2px 2px 3px black;
+    color: white;
+}
+
+/* Ranker */
+
+.projCover-ranker {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/dhaval-s.appspot.com/o/ranker-desktop.png?alt=media&token=462a2923-1029-4f2a-bc54-a21622cdbb9b');
+    background-color: dimgray;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    position: relative;
+}
+
+/* universal */
+
+html, body {
+    background-color: #141414;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+.opa87 {
+    opacity: 0.87;
+}
+
+p {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    opacity: 0.87;
+}
+
+/* navbar */
+
+#navMenu {
+    background-color: black;
+}
+
+.navbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.nav-item {
+    color: white !important;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+}
+
+.dropdown-menu {
+    background-color: #222222;
+}
+
+.dropdown-item {
+    color: rgb(255, 255, 255, 0.85);
+}
+
+.dropdown-menu .active {
+    background-color: #141414;
+    color: rgb(255, 255, 255, 0.85) !important;
+    cursor: default;
+}
+
+.contact-me {
+    border: 2px solid white;
+}
+
+.contact-me:hover {
+    border: 2px solid white;
+    color: black !important;
+    background-color: white;
+}
+
+/* cover */
+
+.cover {
+    position: relative;
+}
+
+.projCover {
+    background-color: dimgray;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    position: relative;
+}
+
+.projName {
+    font-size: 4rem;
+    text-shadow: 2px 2px 3px black;
+    color: white;
+}
+
+.subHeading {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 1px black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.contentHead {
+    font-size: 2.5rem;
+}
+
+.badge {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1px 2px;
+    padding: .50em .5em;
+}
+
+.badge-html {
+    background-color: #ED6535;
+    color: white;
+}
+
+.badge-css {
+    background-color: #1572B5;
+    color: white;
+}
+
+.badge-js {
+    background-color: #f7e018;
+    color: black;
+}
+
+.badge-bootstrap {
+    background-color: #563d7c;
+    color: white;
+}
+
+.badge-mysql {
+    background-color: #4479a1;
+    color: white;
+}
+
+.badge-php {
+    background-color: #4F5B93;
+    color: white;
+}
+
+#langRow {
+    /* background-color: #212529; */
+    /* background-color: #343a40; */
+    color: white;
+    /* margin:0 20em; */
+}
+
+/* left panel */
+
+#leftPanel {
+    color: white;
+}
+
+.list-group {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+}
+
+/* right panel */
+
+#rightPanel {
+    color: white;
+    cursor: default;
+}
+
+.card {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: #c6c8ca;
+}
+
+.card-header {
+    font-size: 1.3rem;
+    opacity: 0.87;
+}
+
+table {
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+
+td {
+    opacity: 0.87;
+    vertical-align: middle !important;
+}
+
+td:nth-child(even) {
+    text-align: right;
+}
+
+/* main */
+
+#mainContent {
+    /* background-color: #e9eaec; */
+    /* background-color: black; */
+    color: white;
+}
